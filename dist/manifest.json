@@ -1,0 +1,33 @@
+{
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "version": "1.0.0",
+    "default_locale": "zh_TW",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "minimum_chrome_version": "26",
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {},
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/NaNaWeb/GP/OpenWin/SingleDataChooser*"
+            ],
+            "js": [
+                "content_script.js"
+            ]
+        }
+    ]
+}

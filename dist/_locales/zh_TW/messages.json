@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "EFGP-ValidationMode"
+  },
+  "appDesc": {
+    "message": "一鍵開啟/關閉EasyFlow GP流程測試模式。"
+  }
+}
